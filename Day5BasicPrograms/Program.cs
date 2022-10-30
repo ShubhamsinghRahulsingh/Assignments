@@ -9,7 +9,7 @@ namespace Day5BasicProgrmas
             bool flag = true;
             while(flag)
             { 
-            Console.WriteLine("1.FlipCoin" +" \n" + "2.LeapYear" + "\n" +"3.PowerOfTwo" + "\n" +"4.EXIT");
+            Console.WriteLine("1.FlipCoin" +" \n" + "2.LeapYear" + "\n" +"3.PowerOfTwo" + "\n" + "4.HarmonicNumber" + "\n" + "5.EXIT");
             Console.WriteLine("Enter the option from the above that you want to go for");
             int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -27,6 +27,10 @@ namespace Day5BasicProgrmas
                         table.Table();
                         break;
                     case 4:
+                        HarmonicNumber number =new HarmonicNumber();
+                        number.Harmonic();
+                        break;
+                    case 5:
                         flag= false;
                         break;
                 }
