@@ -9,7 +9,7 @@ namespace Day5BasicProgrmas
             bool flag = true;
             while(flag)
             { 
-            Console.WriteLine("1.FlipCoin" +" \n" + "2.LeapYear" + "\n" +"3.PowerOfTwo" + "\n" + "4.HarmonicNumber" + "\n" + "5.PrimeFactors" + "\n" + "6.QuotientRemainder" + "\n" + "7.SwapNum" + "\n" + "8.EXIT");
+            Console.WriteLine("1.FlipCoin" +" \n" + "2.LeapYear" + "\n" +"3.PowerOfTwo" + "\n" + "4.HarmonicNumber" + "\n" + "5.PrimeFactors" + "\n" + "6.QuotientRemainder" + "\n" + "7.SwapNum" + "\n" + "8.EvenOrOdd" + "\n" + "9.EXIT");
             Console.WriteLine("Enter the option from the above that you want to go for");
             int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -43,6 +43,10 @@ namespace Day5BasicProgrmas
                         swap.NumSwap();
                         break;
                     case 8:
+                        EvenOrOdd know = new EvenOrOdd();
+                        know.Check();
+                        break;
+                    case 9:
                         flag= false;
                         break;
                 }
