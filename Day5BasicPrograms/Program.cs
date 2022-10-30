@@ -9,7 +9,7 @@ namespace Day5BasicProgrmas
             bool flag = true;
             while(flag)
             { 
-            Console.WriteLine("1.FlipCoin" +" \n" + "2.LeapYear" + "\n" +"3.PowerOfTwo" + "\n" + "4.HarmonicNumber" + "\n" + "5.PrimeFactors" + "\n" + "6.QuotientRemainder" + "\n" + "7.SwapNum" + "\n" + "8.EvenOrOdd"+ "\n" + "9.VowelOrConsonant" + "\n" + "10.EXIT");
+            Console.WriteLine("1.FlipCoin" +" \n" + "2.LeapYear" + "\n" +"3.PowerOfTwo" + "\n" + "4.HarmonicNumber" + "\n" + "5.PrimeFactors" + "\n" + "6.QuotientRemainder" + "\n" + "7.SwapNum" + "\n" + "8.EvenOrOdd"+ "\n" + "9.VowelOrConsonant" + "\n" + "10.LargestNumber" + "\n" + "11.EXIT");
             Console.WriteLine("Enter the option from the above that you want to go for");
             int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -51,6 +51,10 @@ namespace Day5BasicProgrmas
                         vowel.Vowel();
                         break;
                     case 10:
+                        LargestNumber largest = new LargestNumber();
+                        largest.Largest();
+                        break;
+                    case 11:
                         flag= false;
                         break;
                 }
