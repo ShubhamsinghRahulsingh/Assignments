@@ -9,7 +9,7 @@ namespace Day5BasicProgrmas
             bool flag = true;
             while(flag)
             { 
-            Console.WriteLine("\n" + "1.FlipCoin" +" \n" + "2.LeapYear" + "\n" +"3.PowerOfTwo" + "\n" + "4.HarmonicNumber" + "\n" + "5.PrimeFactors" + "\n" + "6.EXIT");
+            Console.WriteLine("1.FlipCoin" +" \n" + "2.LeapYear" + "\n" +"3.PowerOfTwo" + "\n" + "4.HarmonicNumber" + "\n" + "5.PrimeFactors" + "\n" + "6.QuotientRemainder" + "\n" + "7.EXIT");
             Console.WriteLine("Enter the option from the above that you want to go for");
             int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -35,6 +35,10 @@ namespace Day5BasicProgrmas
                         prime.Factor();
                         break;
                     case 6:
+                        QuotientRemainder find = new QuotientRemainder();
+                        find.Operations();
+                        break;
+                    case 7:
                         flag= false;
                         break;
                 }
