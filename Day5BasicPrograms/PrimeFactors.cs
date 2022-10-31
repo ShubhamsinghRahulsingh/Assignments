@@ -2,30 +2,30 @@
 namespace Day5BasicPrograms
 {
     public class PrimeFactors
-    {
-        public void Prime(int n)
-        {
-            while(n%2==0)
-            {
-                Console.Write(2 + " ");
-                n /= 2;
-            }
-            for (int i = 3; i<= Math.Sqrt(n); i +=2)
-            {
-                while(n%i==0)
-                {
-                    Console.WriteLine(i + "");
-                    n /=i;
-                }
-            }
-            if (n > 2)
-                Console.Write(n);
-        }
+    { 
         public void Factor()
         {
+            int count=0;
             Console.WriteLine("Enter the number for which you want to find prime factors");
-            int primeNum = Convert.ToInt32(Console.ReadLine());
-            Prime(primeNum);   
+            int pNum = Convert.ToInt32(Console.ReadLine());
+            for(int i = 2; i <= pNum; i++)
+            {
+                if(pNum%i== 0)
+                {
+                    for(int j = 1; j <= i; j++)
+                    {
+                        if(i%j== 0)
+                        {
+                           count++;
+                        }
+                    }
+                    if(count==2)
+                    {
+                        Console.WriteLine("Prime factor of number {0} is: {1}",pNum,i);
+                    }
+                    count = 0;
+                }
+            }
         }
     }
 }
